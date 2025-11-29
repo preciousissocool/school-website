@@ -1,6 +1,6 @@
 body {
-    background-image: url('background.jpg');
-    background-size: width="700" height="700";
-    background-position: center;
-    background-repeat: no-repeat;
+    font-family: times new romans;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    text-align: center;
+    padding: 50px;
 }
