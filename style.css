@@ -1,5 +1,6 @@
 body {
-    font-family: Arial;
-    background: #f7f7f7;
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    text-align: center;
+    padding: 50px;
 }
