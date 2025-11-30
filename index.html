@@ -1,31 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Grace Court Academy</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Grace Court Academy</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <img src="schoollogo.png" alt="School Logo" width="200" height="200"> 
-        <h1>The Grace Court Academy</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="logo-area">
+      <!-- Optional small logo in header (upload schoollogo.png or remove <img> if you don't want) -->
+      <img src="schoollogo.png" alt="Grace Court Academy logo" class="logo" onerror="this.style.display='none'">
+    </div>
 
-    <main>
-        <h2>Welcome to Our School!</h2>
-        <p>We are committed to excellence in education and nurturing bright futures.</p>
-        <a href="about.html" class="btn">Learn More About Us</a>
-    </main>
+    <nav class="top-nav">
+      <a href="#about">About</a>
+      <a href="#admission">Admission</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <footer>
-        <p>&copy; 2025 The Grace Court Academy. All Rights Reserved.</p>
-    </footer>
+  <main class="hero">
+    <div class="bubble">
+      <h1>Grace Court Academy</h1>
+      <p class="subtitle">Nourishing bright minds</p>
+      <a class="cta" href="#admission">Apply / Learn More</a>
+    </div>
+  </main>
+
+  <!-- Simple sections for anchors (About / Admission / Contact) -->
+  <section id="about" class="info-section">
+    <div class="container">
+      <h2>About Grace Court Academy</h2>
+      <p>Grace Court Academy is committed to academic excellence, character development and creativity. We provide a safe, warm environment for students to grow and discover their strengths.</p>
+    </div>
+  </section>
+
+  <section id="admission" class="info-section alt">
+    <div class="container">
+      <h2>Admission</h2>
+      <p>Admissions open for the 2026 academic year. To apply, fill the admission form and submit required documents. Scholarships and financial aid options are available for eligible students.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="info-section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: admissions@gracecourt.edu | Phone: +234 801 234 5678</p>
+      <p>Follow us on Instagram: <a href="https://instagram.com/youraccount" target="_blank" rel="noopener">@youraccount</a></p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Grace Court Academy — All rights reserved.</p>
+  </footer>
+
+  <script>
+    // set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
 
