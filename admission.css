@@ -1,0 +1,113 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #d9f3f2;
+}
+
+/* HEADER */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: white;
+}
+
+.topnav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+/* ENROLLMENT SECTION */
+.enrollment-steps {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.enrollment-steps h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.step-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+/* PRICING SECTION */
+.pricing-section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.pricing-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.price-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.price-card .icon {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 26px;
+  margin: 15px 0;
+  color: #333;
+}
+
+.select-btn {
+  background: #cef2ef;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.price-card ul {
+  text-align: left;
+  margin-top: 20px;
+  color: #555;
+}
+
+.recommended {
+  border: 2px solid #6ec7c0;
+}
+
+.tag {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #6ec7c0;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 20px;
+}
