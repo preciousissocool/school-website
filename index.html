@@ -1,82 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grace Court Academy</title>
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            background-image: url("your-image.jpg"); /* <-- replace with your own image */
-            background-size: cover;
-            background-position: center;
-            font-family: Arial, sans-serif;
-            color: white;
-        }
-
-        /* Navigation Bar */
-        nav {
-            display: flex;
-            justify-content: flex-end;
-            padding: 20px;
-            position: absolute;
-            width: 100%;
-            top: 0;
-        }
-
-        nav a {
-            margin-left: 30px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Center text */
-        .hero {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            backdrop-filter: brightness(0.8);
-            text-align: center;
-        }
-
-        /* Bubble text */
-        h1 {
-            font-size: 60px;
-            padding: 20px 40px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 40px;
-            backdrop-filter: blur(5px);
-        }
-
-        h2 {
-            font-size: 24px;
-            margin-top: 10px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Grace Court Academy</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-    <nav>
-        <a href="about.html">About</a>
-        <a href="admission.html">Admission</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-    <div class="hero">
-        <h1>Grace Court Academy</h1>
-        <h2>Nourishing Bright Minds</h2>
+  <header class="site-header">
+    <div class="brand">
+      <img src="schoollogo.png" alt="School Logo" class="logo" />
+      <span class="school-name">Grace Court Academy</span>
     </div>
 
+    <!-- NAV in top-right -->
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="admission.html">Admission</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="hero-bubble">
+      <h1>Grace Court Academy</h1>
+      <p class="tagline">Nourishing bright minds</p>
+      <a class="btn" href="admission.html">Apply / Learn More</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Grace Court Academy. All rights reserved.</p>
+  </footer>
 </body>
 </html>
