@@ -1,37 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Grace Court Academy</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Court Academy</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+            background: url("background.jpg") no-repeat center center/cover;
+        }
+
+        /* NAVIGATION */
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 40px;
+            position: fixed;
+            top: 0;
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(5px);
+        }
+
+        nav a {
+            margin-left: 25px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .bubble-text {
+            font-size: 55px;
+            font-weight: bold;
+            animation: bubble 2s infinite;
+            text-shadow: 3px 3px 10px black;
+        }
+
+        @keyframes bubble {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.07); }
+            100% { transform: scale(1); }
+        }
+
+        .subtitle {
+            font-size: 22px;
+            margin-top: 10px;
+        }
+
+        /* SECTIONS */
+        section {
+            height: 100vh;
+            padding: 80px 40px;
+            background: white;
+            color: black;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="brand">
-      <img src="schoollogo.png" alt="School Logo" class="logo" />
-      <span class="school-name">Grace Court Academy</span>
-    </div>
 
-    <!-- NAV in top-right -->
-    <nav class="topnav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="admission.html">Admission</a>
-      <a href="contact.html">Contact</a>
+    <!-- NAVBAR -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#contact">Contact</a>
     </nav>
-  </header>
 
-  <main class="hero">
-    <div class="hero-bubble">
-      <h1>Grace Court Academy</h1>
-      <p class="tagline">Nourishing bright minds</p>
-      <a class="btn" href="admission.html">Apply / Learn More</a>
+    <!-- HERO / WELCOME SECTION -->
+    <div class="hero">
+        <div>
+            <div class="bubble-text">Grace Court Academy</div>
+            <div class="subtitle">Nourishing Bright Minds</div>
+        </div>
     </div>
-  </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 Grace Court Academy. All rights reserved.</p>
-  </footer>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            Welcome to Grace Court Academy — where young minds grow, discover, and thrive.
+            Our mission is to build confident, responsible, and brilliant students.
+        </p>
+    </section>
+
+    <!-- ADMISSIONS SECTION -->
+    <section id="admissions">
+        <h2>Admissions</h2>
+        <p>
+            Our admissions process is simple and student-centered. Apply today and become part
+            of a growing community of excellence.
+        </p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+            Email: info@gracecourtacademy.com <br>
+            Phone: +123 456 7890
+        </p>
+    </section>
+
 </body>
 </html>
